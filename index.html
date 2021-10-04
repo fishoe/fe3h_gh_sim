@@ -108,7 +108,7 @@
                 cultivation_tier = 6 - grade;
                 total_boost_prob = 0;
 
-                booster_prob_base = score_values[3] + seed_array.length * 6 + cultivation_tier*5;
+                booster_prob_base = score_values[3] + seed_array.length * 6 + method_value*5;
                 for(i in seed_map){
                     seed_rare_prob = (Number(seed_data[i]["희귀도"]) - 1) * 5;
                     current_seed_prob = seed_rare_prob + booster_prob_base;
